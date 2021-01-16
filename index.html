@@ -3,57 +3,145 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Loopstudios landing page</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet"> 
   
-  <title>Frontend Mentor | Loopstudios landing page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
-  About
-  Careers
-  Events
-  Products
-  Support
-
-  Immersive experiences that deliver
-
-  The leader in interactive VR
-
-  Founded in 2011, Loopstudios has been producing world-class virtual reality 
-  projects for some of the best companies around the globe. Our award-winning 
-  creations have transformed businesses through digital experiences that bind 
-  to their brand.
-
-  Our creations
-
-  See all
-
-  Deep earth
-  Night arcade
-  Soccer team VR
-  The grid
-  From up above VR
-  Pocket borealis
-  The curiosity
-  Make it fisheye
-
-  About
-  Careers
-  Events
-  Products
-  Support
-
-  © 2021 Loopstudios. All rights reserved.
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+<body class="page">
+<header class="hero">
+  <nav class="navigation navigation__header">
+    <div class="logo">
+      <img src="./images/logo.svg" alt="logo" class="logo__img">
+    </div>
+    
+    <div class="hide-for-desktop navigation__burger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="hidden navigation__mobile">
+      <ul class="navigation__items__mobile">
+      <li class="navigation__element__mobile copy--white">About</li>
+      <li class="navigation__element__mobile copy--white">Careers</li>
+      <li class="navigation__element__mobile copy--white">Events</li>
+      <li class="navigation__element__mobile copy--white">Products</li>
+      <li class="navigation__element__mobile copy--white">Support</li>
+   </ul>
+   </div>
+    <div class="navigation__desktop hide-for-mobile">
+    <ul class="hide-for-mobile navigation__items">
+      <li class="navigation__element copy--white">About</li>
+      <li class="navigation__element copy--white">Careers</li>
+      <li class="navigation__element copy--white">Events</li>
+      <li class="navigation__element copy--white">Products</li>
+      <li class="navigation__element copy--white">Support</li>
+   </ul>
   </div>
+  </nav>
+<div class="hero__copy">
+  <h1 class="hero__heading copy--large copy--white">Immersive experiences that deliver</h1>
+</div>
+</header>
+  <article class="about-us">
+    <div class="about-us__img">
+    </div>
+    <div class="about-us__text">
+      <h2 class="about-us__heading copy--medium heading--black">The leader in interactive VR</h2>
+      <p class="about-us__copy copy--body copy--grey">Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.</p>
+    </div>
+  </article>
+  <section class="our-creations">
+    <div class="our-creations__header">
+      <div class="our-creations__copy">
+        <h2 class="our-creations__heading copy--medium heading--black">Our Creations</h2>
+        <button class="our-creations__btn btn btn--white">See All</button>
+      </div>
+    </div>
+    <div class="our-creations__card">
+      <div class="our-creations__card__copy">
+        <h2 class="copy--small copy--white">Deep Earth</h2>
+      </div>
+    </div>
+    <div class="our-creations__card">
+      <div class="our-creations__card__copy">
+        <h2 class="copy--small copy--white">Night Arcade</h2>
+      </div>
+    </div>
+    <div class="our-creations__card">
+      <div class="our-creations__card__copy">
+        <h2 class="copy--small copy--white">Soccer Team VR</h2>
+      </div>
+    </div>
+    <div class="our-creations__card">
+      <div class="our-creations__card__copy">
+        <h2 class="our-creations__card__heading copy--small copy--white">The Grid</h2>
+      </div>
+    </div>
+    <div class="our-creations__card">
+      <div class="our-creations__card__copy">
+        <h2 class="our-creations__card__heading copy--small copy--white">From Up Above VR</h2>
+      </div>
+    </div>
+    <div class="our-creations__card">
+      <div class="our-creations__card__copy">
+        <h2 class="our-creations__card__heading copy--small copy--white">Pocket Borealis</h2>
+      </div>
+    </div>
+    <div class="our-creations__card">
+      <div class="our-creations__card__copy">
+        <h2 class="our-creations__card__heading copy--small copy--white">The Curiosity</h2>
+      </div>
+    </div>
+    <div class="our-creations__card">
+      <div class="our-creations__card__copy">
+        <h2 class="our-creations__card__heading copy--small copy--white">Make It Fisheye</h2>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <nav class="navigation navigation__footer">
+      <ul class="navigation__items">
+        <li class="navigation__element copy--white">About</li>
+        <li class="navigation__element copy--white">Careers</li>
+        <li class="navigation__element copy--white">Events</li>
+        <li class="navigation__element copy--white">Products</li>
+        <li class="navigation__element copy--white">Support</li>
+     </ul>
+    </nav>
+    <div class="navigation__icons">
+      <div class="icon"></div>
+      <div class="icon"></div>
+      <div class="icon"></div>
+      <div class="icon"></div>
+    </div>
+    <div class="navigation__copyright">
+      <p class="footer__copy copy--body copy--grey">© 2021 Loopstudios. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="app.js"></script>
 </body>
 </html>
+
+Our creations
+
+See all
+
+Deep earth
+Night arcade
+Soccer team VR
+The grid
+From up above VR
+Pocket borealis
+The curiosity
+Make it fisheye
+
+About
+Careers
+Events
+Products
+Support
+
+

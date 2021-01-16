@@ -1,0 +1,105 @@
+//font-colors
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
+$dark-grey: hsl(0, 0%, 55%);
+$darker-grey: hsl(0, 0%, 41%);
+
+//font-sizes
+$copy--large: 4.375rem;
+$copy--medium: 3rem;
+$copy--small: 2rem;
+$copy--body: 1.5625rem;
+
+$title-text: "Josefin Sans", sans-serif;
+$body-text: "Alata", sans-serif;
+
+//font set
+.copy--white {
+  color: $white;
+}
+
+.copy--large {
+  font-size: $copy--large;
+}
+
+//mixins
+
+//640px, 1024px, 1400px
+$breakpoints-up: (
+  "medium": 40em,
+  "large": 64em,
+  "xlarge": 87em,
+);
+
+$breakpoints-down: (
+  "small": 39.9375em,
+  "medium": 63.9375em,
+  "large": 87.4375,
+);
+
+@mixin breakpoint-up($size) {
+  @media (min-width: map-get($breakpoints-up, $key:$size)) {
+    @content;
+  }
+}
+
+@mixin breakpoint-down($size) {
+  @media (max-width: map-get($breakpoints-down, $key:$size)) {
+    @content;
+  }
+}
+
+.copy--large {
+  font-family: $title-text;
+  font-weight: 300;
+  font-size: 72px;
+  line-height: 70px;
+  text-transform: uppercase;
+}
+
+.copy--medium {
+  font-family: $title-text;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+
+.copy--body {
+  font-family: $body-text;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.copy--grey {
+  color: $dark-grey;
+}
+
+.copy--small {
+  font-family: $title-text;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 32px;
+  /* or 100% */
+
+  text-transform: uppercase;
+}
+
+.navigation__element {
+  font-family: $body-text;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.hidden {
+  display: none;
+  animation: fade_in_show 0.5s;
+}
+
+.fixed {
+  position: fixed !important;
+}
