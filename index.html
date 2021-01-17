@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet"> 
   
+
 </head>
 <body class="page">
 <header class="hero">
@@ -16,33 +17,30 @@
     <div class="logo">
       <img src="./images/logo.svg" alt="logo" class="logo__img">
     </div>
-    
-    <div class="hide-for-desktop navigation__burger-menu">
+    <div class="navigation__mobile hidden">
+      <ul class="navigation__items__mobile">
+        <li class="navigation__element__mobile copy--small copy--white"><a href="#">About</a></li>
+        <li class="navigation__element__mobile copy--small copy--white"><a href="#">Careers</a></li>
+        <li class="navigation__element__mobile copy--small copy--white"><a href="#">Events</li>
+        <li class="navigation__element__mobile copy--small copy--white"><a href="#">Support</a></li>
+        <li class="navigation__element__mobile copy--small copy--white"><a href="#">Products</a></li>
+     </ul>
+    </div>
+    <div class="navigation__burger-menu hide-for-desktop">
       <span></span>
       <span></span>
       <span></span>
     </div>
-    <div class="hidden navigation__mobile">
-      <ul class="navigation__items__mobile">
-      <li class="navigation__element__mobile copy--white">About</li>
-      <li class="navigation__element__mobile copy--white">Careers</li>
-      <li class="navigation__element__mobile copy--white">Events</li>
-      <li class="navigation__element__mobile copy--white">Products</li>
-      <li class="navigation__element__mobile copy--white">Support</li>
+    <ul class="navigation__items hide-for-mobile">
+      <li class="navigation__element copy--white"><a href="#">About</a></li>
+      <li class="navigation__element copy--white"><a href="#">Careers</a></li>
+      <li class="navigation__element copy--white"><a href="#">Events</a></li>
+      <li class="navigation__element copy--white"><a href="#">Support</a></li>
+      <li class="navigation__element copy--white"><a href="#">Products</a></li>
    </ul>
-   </div>
-    <div class="navigation__desktop hide-for-mobile">
-    <ul class="hide-for-mobile navigation__items">
-      <li class="navigation__element copy--white">About</li>
-      <li class="navigation__element copy--white">Careers</li>
-      <li class="navigation__element copy--white">Events</li>
-      <li class="navigation__element copy--white">Products</li>
-      <li class="navigation__element copy--white">Support</li>
-   </ul>
-  </div>
   </nav>
 <div class="hero__copy">
-  <h1 class="hero__heading copy--large copy--white">Immersive experiences that deliver</h1>
+  <h1 class="copy--large copy--white">Immersive experiences that deliver</h1>
 </div>
 </header>
   <article class="about-us">
@@ -56,92 +54,99 @@
   <section class="our-creations">
     <div class="our-creations__header">
       <div class="our-creations__copy">
-        <h2 class="our-creations__heading copy--medium heading--black">Our Creations</h2>
-        <button class="our-creations__btn btn btn--white">See All</button>
+        <h2 class="our-creations__heading copy--medium heading--black">Our Creations</h2>   
       </div>
+      <button class="our-creations__btn btn btn--white hide-for-mobile">See All</button>
     </div>
-    <div class="our-creations__card">
+    <div class="our-creations__cards">
+    <div class="our-creations__card our-creations__card--background-1">
       <div class="our-creations__card__copy">
         <h2 class="copy--small copy--white">Deep Earth</h2>
       </div>
     </div>
-    <div class="our-creations__card">
+    <div class="our-creations__card our-creations__card--background-2">
       <div class="our-creations__card__copy">
         <h2 class="copy--small copy--white">Night Arcade</h2>
       </div>
     </div>
-    <div class="our-creations__card">
+    <div class="our-creations__card our-creations__card--background-3">
       <div class="our-creations__card__copy">
         <h2 class="copy--small copy--white">Soccer Team VR</h2>
       </div>
     </div>
-    <div class="our-creations__card">
+    <div class="our-creations__card our-creations__card--background-4">
       <div class="our-creations__card__copy">
-        <h2 class="our-creations__card__heading copy--small copy--white">The Grid</h2>
+        <h2 class="our-creations__card__heading copy--small copy--white">The <br>Grid</h2>
       </div>
     </div>
-    <div class="our-creations__card">
+    <div class="our-creations__card our-creations__card--background-5">
       <div class="our-creations__card__copy">
         <h2 class="our-creations__card__heading copy--small copy--white">From Up Above VR</h2>
       </div>
     </div>
-    <div class="our-creations__card">
+    <div class="our-creations__card our-creations__card--background-6">
       <div class="our-creations__card__copy">
         <h2 class="our-creations__card__heading copy--small copy--white">Pocket Borealis</h2>
       </div>
     </div>
-    <div class="our-creations__card">
+    <div class="our-creations__card our-creations__card--background-7">
       <div class="our-creations__card__copy">
         <h2 class="our-creations__card__heading copy--small copy--white">The Curiosity</h2>
       </div>
     </div>
-    <div class="our-creations__card">
+    <div class="our-creations__card our-creations__card--background-8">
       <div class="our-creations__card__copy">
         <h2 class="our-creations__card__heading copy--small copy--white">Make It Fisheye</h2>
       </div>
     </div>
+    <div class="btn-container hide-for-desktop">
+    <button class="our-creations__btn btn btn--white">See All</button>
+  </div>
+    </div>
+    
+
   </section>
   <footer class="footer">
-    <nav class="navigation navigation__footer">
-      <ul class="navigation__items">
-        <li class="navigation__element copy--white">About</li>
-        <li class="navigation__element copy--white">Careers</li>
-        <li class="navigation__element copy--white">Events</li>
-        <li class="navigation__element copy--white">Products</li>
-        <li class="navigation__element copy--white">Support</li>
+    <div class="container">
+    <div class="logo-icons">
+      <div class="logo">
+        <img src="./images/logo.svg" alt="logo" class="logo__img">
+      </div>
+      <ul class="navigation__items navigation__items__mobile">
+        <li class="navigation__element copy--white"><a href="">About</a></li>
+        <li class="navigation__element copy--white"><a href="">Careers</a></li>
+        <li class="navigation__element copy--white"><a href="">Events</a></li>
+        <li class="navigation__element copy--white"><a href="">Products</a></li>
+        <li class="navigation__element copy--white"><a href="">Support</a></li>
      </ul>
-    </nav>
-    <div class="navigation__icons">
-      <div class="icon"></div>
-      <div class="icon"></div>
-      <div class="icon"></div>
-      <div class="icon"></div>
+      <div class="navigation__icons">
+      <div class="icon"><a class="icons-hover" href="#"><img src="images/icon-facebook.svg" alt="" srcset=""></a></div>
+      <div class="icon"><a class="icons-hover" href="#"><img src="images/icon-twitter.svg" alt="" srcset=""></a></div>
+      <div class="icon"><a class="icons-hover" href="#"><img src="images/icon-pinterest.svg" alt="" srcset=""></a></div>
+      <div class="icon"><a class="icons-hover" href="#"><img src="images/icon-instagram.svg" alt="" srcset=""></a></div>
     </div>
-    <div class="navigation__copyright">
+    <div class="navigation__copyright__mobile hide-for-desktop">
       <p class="footer__copy copy--body copy--grey">© 2021 Loopstudios. All rights reserved.</p>
     </div>
+  </div>
+    <nav class="navigation navigation__footer hide-for-mobile">
+      <ul class="navigation__items">
+        <li class="navigation__element copy--white"><a href="">About</a></li>
+        <li class="navigation__element copy--white"><a href="">Careers</a></li>
+        <li class="navigation__element copy--white"><a href="">Events</a></li>
+        <li class="navigation__element copy--white"><a href="">Products</a></li>
+        <li class="navigation__element copy--white"><a href="">Support</a></li>
+     </ul>
+     <div class="navigation__copyright hide-for-mobile">
+      <p class="footer__copy copy--body copy--grey">© 2021 Loopstudios. All rights reserved.</p>
+    </div>
+    </nav>
+    
+
+  </div>
+    
   </footer>
   <script src="app.js"></script>
 </body>
 </html>
-
-Our creations
-
-See all
-
-Deep earth
-Night arcade
-Soccer team VR
-The grid
-From up above VR
-Pocket borealis
-The curiosity
-Make it fisheye
-
-About
-Careers
-Events
-Products
-Support
-
 

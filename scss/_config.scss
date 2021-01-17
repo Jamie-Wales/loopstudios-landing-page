@@ -12,7 +12,6 @@ $copy--body: 1.5625rem;
 
 $title-text: "Josefin Sans", sans-serif;
 $body-text: "Alata", sans-serif;
-
 //font set
 .copy--white {
   color: $white;
@@ -80,8 +79,8 @@ $breakpoints-down: (
   font-family: $title-text;
   font-style: normal;
   font-weight: 300;
-  font-size: 32px;
-  line-height: 32px;
+  font-size: 24px;
+  line-height: 24px;
   /* or 100% */
 
   text-transform: uppercase;
@@ -102,4 +101,44 @@ $breakpoints-down: (
 
 .fixed {
   position: fixed !important;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+  position: relative;
+}
+
+a:hover::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 0;
+  left: 10px;
+  bottom: -8px; /*Change this to increase/decrease distance*/
+  border-bottom: 3px solid $white;
+  animation: sheen 0.5s forwards;
+}
+
+.icons-hover {
+  text-decoration: none;
+  color: $white;
+  position: relative;
+}
+
+.icons-hover:hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  left: 0;
+  bottom: -8px; /*Change this to increase/decrease distance*/
+  border-bottom: 3px solid $white;
+  animation: sheen 0.5s forwards;
+}
+
+@keyframes sheen {
+  0% {
+    width: 0%;
+  }
 }

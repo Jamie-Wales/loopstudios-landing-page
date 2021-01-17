@@ -14,3 +14,243 @@
   @include breakpoint-down(medium) {
   }
 }
+
+.hero {
+  @include breakpoint-down(medium) {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("../images/mobile/image-hero.jpg");
+    background-size: 100%;
+  }
+  .hero__copy {
+    @include breakpoint-down(medium) {
+      margin-left: 0;
+      height: 30%;
+      max-width: 90%;
+      margin: 227px 24px;
+    }
+  }
+}
+
+.about-us {
+  @include breakpoint-down(medium) {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5%;
+    min-height: 527px;
+    min-width: 327px;
+  }
+
+  &__img {
+    @include breakpoint-down(medium) {
+      background-image: url("/images/mobile/image-interactive.jpg");
+      min-width: 327px;
+      min-height: 224px;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__text {
+    @include breakpoint-down(medium) {
+      padding: 0 48px;
+      text-align: center;
+      min-width: 279px;
+      min-height: 255px;
+    }
+  }
+}
+
+.our-creations {
+  &__copy {
+    @include breakpoint-down(medium) {
+      margin: 0 auto;
+    }
+  }
+
+  &__header {
+    margin-top: 96px;
+  }
+
+  &__card {
+    @include breakpoint-down(medium) {
+      height: 120px;
+      width: 320px;
+
+      &__copy {
+        @include breakpoint-down(medium) {
+          max-width: 169px;
+          height: 48px;
+          margin-left: 20px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    &--background-1 {
+      @include breakpoint-down(medium) {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.4)
+          ),
+          url("../images/mobile/image-deep-earth.jpg");
+      }
+    }
+    &--background-2 {
+      @include breakpoint-down(medium) {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.4)
+          ),
+          url("../images/mobile/image-night-arcade.jpg");
+      }
+    }
+    &--background-3 {
+      @include breakpoint-down(medium) {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.4)
+          ),
+          url("../images/mobile/image-soccer-team.jpg");
+      }
+    }
+    &--background-4 {
+      @include breakpoint-down(medium) {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.4)
+          ),
+          url("../images/mobile/image-grid.jpg");
+      }
+    }
+    &--background-5 {
+      @include breakpoint-down(medium) {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.4)
+          ),
+          url("/images/mobile/image-from-above.jpg");
+      }
+    }
+    &--background-6 {
+      @include breakpoint-down(medium) {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.4)
+          ),
+          url("/images/mobile/image-pocket-borealis.jpg");
+      }
+    }
+    &--background-7 {
+      @include breakpoint-down(medium) {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.4)
+          ),
+          url("/images/mobile/image-curiosity.jpg");
+      }
+    }
+    &--background-8 {
+      @include breakpoint-down(medium) {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.4)
+          ),
+          url("/images/mobile/image-fisheye.jpg");
+      }
+    }
+  }
+}
+
+body {
+  @include breakpoint-down(medium) {
+    overflow-x: hidden;
+  }
+}
+
+.copy--large {
+  @include breakpoint-down(medium) {
+    font-family: $title-text;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 38px;
+  }
+}
+
+.copy--medium {
+  @include breakpoint-down(medium) {
+    font-family: $title-text;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 32px;
+    text-transform: uppercase;
+  }
+}
+
+.copy--small {
+}
+
+.copy--body {
+  font-family: $body-text;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.copy--grey {
+  color: $dark-grey;
+}
+
+.copy--small {
+  font-family: $title-text;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 32px;
+  @include breakpoint-down(medium) {
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+  /* or 100% */
+}
+
+.btn-container {
+  width: 256px;
+  padding-left: 50px;
+  margin-bottom: 96px;
+}
+
+.footer {
+  .logo-icons {
+    @include breakpoint-down(medium) {
+      flex-direction: column;
+    }
+  }
+}
+
+.navigation__items__mobile {
+  @include breakpoint-up(large) {
+    display: none;
+  }
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  text-align: center;
+
+  .navigation__element {
+    padding: 16px;
+  }
+}
+
+.navigation__copyright__mobile {
+  @include breakpoint-up(large) {
+    display: none;
+  }
+  width: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+}
