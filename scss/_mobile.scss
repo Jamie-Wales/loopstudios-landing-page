@@ -94,6 +94,7 @@
             rgba(0, 0, 0, 0.4)
           ),
           url("../images/mobile/image-deep-earth.jpg");
+        backgorund-size: cover;
       }
     }
     &--background-2 {
@@ -103,6 +104,7 @@
             rgba(0, 0, 0, 0.4)
           ),
           url("../images/mobile/image-night-arcade.jpg");
+        background-size: cover;
       }
     }
     &--background-3 {
@@ -112,6 +114,7 @@
             rgba(0, 0, 0, 0.4)
           ),
           url("../images/mobile/image-soccer-team.jpg");
+        background-size: cover;
       }
     }
     &--background-4 {
@@ -121,6 +124,7 @@
             rgba(0, 0, 0, 0.4)
           ),
           url("../images/mobile/image-grid.jpg");
+        background-size: cover;
       }
     }
     &--background-5 {
@@ -130,6 +134,7 @@
             rgba(0, 0, 0, 0.4)
           ),
           url("/images/mobile/image-from-above.jpg");
+        background-size: cover;
       }
     }
     &--background-6 {
@@ -139,6 +144,7 @@
             rgba(0, 0, 0, 0.4)
           ),
           url("/images/mobile/image-pocket-borealis.jpg");
+        background-size: cover;
       }
     }
     &--background-7 {
@@ -148,6 +154,7 @@
             rgba(0, 0, 0, 0.4)
           ),
           url("/images/mobile/image-curiosity.jpg");
+        background-size: cover;
       }
     }
     &--background-8 {
@@ -157,6 +164,7 @@
             rgba(0, 0, 0, 0.4)
           ),
           url("/images/mobile/image-fisheye.jpg");
+        background-size: cover;
       }
     }
   }
@@ -186,9 +194,6 @@ body {
     line-height: 32px;
     text-transform: uppercase;
   }
-}
-
-.copy--small {
 }
 
 .copy--body {
@@ -250,7 +255,4 @@ body {
   width: 500px;
   display: flex;
   justify-content: center;
-}
-
-a {
 }

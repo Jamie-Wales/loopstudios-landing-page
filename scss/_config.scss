@@ -142,3 +142,7 @@ a:hover::after {
     width: 0%;
   }
 }
+
+.lazy {
+  background-image: none !important;
+}
