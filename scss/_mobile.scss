@@ -42,7 +42,7 @@
 
   &__img {
     @include breakpoint-down(medium) {
-      background-image: url("/images/mobile/image-interactive.jpg");
+      background-image: url("../images/mobile/image-interactive.jpg");
       min-width: 327px;
       min-height: 224px;
       background-size: contain;
@@ -133,7 +133,7 @@
             rgba(0, 0, 0, 0.2),
             rgba(0, 0, 0, 0.4)
           ),
-          url("/images/mobile/image-from-above.jpg");
+          url("../images/mobile/image-from-above.jpg");
         background-size: cover;
       }
     }
@@ -143,7 +143,7 @@
             rgba(0, 0, 0, 0.2),
             rgba(0, 0, 0, 0.4)
           ),
-          url("/images/mobile/image-pocket-borealis.jpg");
+          url("../images/mobile/image-pocket-borealis.jpg");
         background-size: cover;
       }
     }
@@ -153,7 +153,7 @@
             rgba(0, 0, 0, 0.2),
             rgba(0, 0, 0, 0.4)
           ),
-          url("/images/mobile/image-curiosity.jpg");
+          url("../images/mobile/image-curiosity.jpg");
         background-size: cover;
       }
     }
@@ -163,7 +163,7 @@
             rgba(0, 0, 0, 0.2),
             rgba(0, 0, 0, 0.4)
           ),
-          url("/images/mobile/image-fisheye.jpg");
+          url("../images/mobile/image-fisheye.jpg");
         background-size: cover;
       }
     }
